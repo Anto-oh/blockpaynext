@@ -1,0 +1,28 @@
+
+
+.Main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .butcon{
+    height: 80px;
+    width: 200px;
+    border: solid 1px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #740ffd;
+    border-color: #300acc;
+    color: aliceblue;
+    font-size: large;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    }
+
+    .table{
+        padding: 50px;
+        border-spacing: 1rem;
+        text-align: left;
+      }
+      

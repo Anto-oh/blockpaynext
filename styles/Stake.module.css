@@ -1,0 +1,191 @@
+
+.avaxBalance{
+    grid-template-columns: auto auto ;
+    
+    border-bottom: solid 1px rgb(170, 170, 170);
+    padding: 10px;
+    }
+    
+    .balanceTop{
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .balanceLeft{
+      display: grid;
+      grid-template-rows: auto auto;
+    }
+    .savaxBalance{
+      display: grid;
+      grid-template-columns: auto auto ;
+    
+      padding: 10px;
+    }
+    
+    .stakebox{
+      display: flex;
+      position: relative;
+      align-items: center;
+      flex-direction: column;
+      border: solid 1px #300acc;
+      border-radius: 20px;
+      padding: 20px;
+      margin: 10px;
+      background-image: -moz-linear-gradient(#520ce4, white);
+      color: aliceblue;
+    }
+    
+    .unstakebox{
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      border: solid 1px #300acc;
+      border-radius: 20px;
+      padding: 20px;
+      margin: 10px;
+      background-image: -moz-linear-gradient(#740ffd, white);
+      color: aliceblue;
+    }
+    .Stake{
+      background-image: -moz-linear-gradient(#edf4f6, white);
+      padding: 50px;
+      border-radius: 10px;
+      max-width: 890px;
+      min-width: 40%;
+    
+    
+    }
+    
+    .input {
+
+    border: solid 1px #300acc;
+    margin: 15px;
+    width: 160px;
+    background: transparent;
+    font-size: 20px;
+    padding-left: 10px;
+    color: #edf4f6;
+    padding-right: 60px
+    
+    /*background-image: url('./avalanche.png');
+    background-repeat: no-repeat;
+    background-position: 80%;
+    background-size: 6%;*/
+    }
+    
+
+    .input2 {
+
+      border: solid 1px #300acc;
+      margin: 15px;
+      width: 260px;
+      background: transparent;
+      font-size: 20px;
+      padding-left: 100px;
+      color: #edf4f6;
+      padding-right: 60px
+      
+      /*background-image: url('./avalanche.png');
+      background-repeat: no-repeat;
+      background-position: 80%;
+      background-size: 6%;*/
+      }
+    .inputisotipo{
+    left: 10;
+      margin-top: 30;
+      height: 60px;
+    }
+    .button2{
+    height: 55px;
+    width: 150px;
+    border: solid 1px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #740ffd;
+    border-color: #300acc;
+    color: aliceblue;
+    }
+    
+    .button3{
+      height: 55px;
+      width: 150px;
+      border: solid 1px;
+      border-radius: 10px;
+      margin: 10px;
+      background-color: #740ffd;
+    border-color: #300acc;
+    color: aliceblue;
+      }
+
+    .right {
+      text-align: right;
+    }
+    
+    
+    
+    .rightWallet{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(179, 178, 178);
+      border-radius: 12px;
+      width:180px;
+      height: 50px;
+    }
+    
+    .walletButton{
+      background-color: #ccf0fb;
+      border-radius: 30px;
+      border: solid 2px #00b3ed;
+      width: 110px;
+      height: 40px;
+    }
+    
+    
+    .input:focus {		
+      outline: none;
+    }
+    
+    .dropdown {
+      position: relative;
+    } 
+.menu {
+  position: absolute;
+  list-style-type: none;
+  margin:  0;
+  padding: 0;
+  border: 1px solid grey;
+  width: 150px;
+}
+
+.button4{
+  height: 30px;
+  list-style-type: none;
+  margin:  0;
+  padding: 0;
+  border: 1px solid grey;
+  width: 150px;
+}
+.menuitem {
+  margin: 0;
+  background-color: white;
+}
+
+.menuitem:hover {
+  background-color: lightgray;
+}
+
+.menuitem > button {
+  width: 150px;
+  height: 100%;
+  text-align: left;
+
+  background: none;
+  color: gray;
+  border: none;
+  padding: 5px;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+}

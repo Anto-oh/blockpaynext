@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100,300;500;700&family=Secular+One&display=swap');
+.navbar {
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: 95px;
+    border-bottom: solid 1px black;
+    
+  }
+
+  .conbut{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:lighter
+  }
