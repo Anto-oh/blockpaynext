@@ -4,22 +4,38 @@ import 'remixicon/fonts/remixicon.css'
 import styles from '../styles/Stake.module.css'
 import isotipo from './logosbpay/Isotipo_blanco.png'
 import Image from 'next/image'
-function Stake(){
-const [open, setOpen] = useState(false);
-const handleOpen = () => {
-    setOpen(!open);
+
+
+class Stake extends Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+            open: false,
+            currency: 'AVAX'
+        }
+    }
+
+    
+handleOpen = () => {
+    const previous_state = this.state.open
+    this.setState({open: !previous_state});
   };
 
-
-  const handleMenuOne = () => {
+    
+ handleMenuOne = () => {
     // do something
-    setOpen(false);
+    this.setState({open: false});
+    this.setState({currency: 'AVAX'})
   };
 
-  const handleMenuTwo = () => {
+  handleMenuTwo = () => {
     // do something
-    setOpen(false);
+    this.setState({open: false});
+    this.setState({currency: 'Dollars'})
   };
+
+  render(){
+    const currency= this.state.currency
 return(
     
 <div className={styles.Stake}>
@@ -35,7 +51,7 @@ return(
     
     
         <div className={styles.unstakebox}>
-            <p style={{alignText:'left'}}>0 AVAX</p>
+            <p style={{alignText:'left'}}>0 {currency}</p>
             <div style={{display:"grid", gridTemplateColumns: "auto auto", position:"relative"}}>
                 <input className={styles.input2} placeholder='0.00' id='stakeinput'></input>
                 <div style={{ position:"absolute", top:"5px", left:"20px"}}>
@@ -43,18 +59,18 @@ return(
                 </div>
             </div>
             <div className={styles.dropdown}>
-                <button className={styles.button4} onClick={handleOpen}>Type of currency</button> 
-                {open ? (
+                <button className={styles.button4} onClick={()=> this.handleOpen()}>{currency}</button> 
+                {this.state.open ? (
         <ul className={styles.menu}>
           <li className={styles.menuitem}>
-            <button  onClick={handleMenuOne}>AVAX</button>
+            <button  onClick={()=> this.handleMenuOne()}>AVAX</button>
           </li>
           <li className={styles.menuitem}>
-            <button onClick={handleMenuTwo}>Dollar</button>
+            <button onClick={()=> this.handleMenuTwo()}>Dollar</button>
           </li>
         </ul>
       ) : null}
-      {open ? <div>Is Open</div> : <div>Is Closed</div>}
+      {this.state.open ? <div>Is Open</div> : <div>Is Closed</div>}
 </div>
                 <button className={styles.button3}>BUY</button>
         </div>
@@ -64,5 +80,5 @@ return(
 )
 }
 
-
+}
 export default Stake
